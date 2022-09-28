@@ -2,6 +2,8 @@
     
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
+import Chat from '../components/Chat';
+
 
 class IndexPage extends Component {
 
@@ -53,7 +55,9 @@ class IndexPage extends Component {
               </div>
             </section>
             
-            <section className="col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-white px-0"></section>
+            <section className="col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-white px-0">
+            { user && <Chat activeUser={user} /> }
+            </section>
             
           </div>
           
